@@ -1,6 +1,6 @@
 {
   "name": "yadcf",
-  "version": "0.9.1",
+  "version": "0.9.3",
   "title": "Yet Another DataTables Column Filter (yadcf)",
   "description": "This jQuery plug-in allows the user to easily add filter components to table columns, the plug-in works on top of the DataTables jQuery plug-in.",
   "author": {
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vedmack/yadcf.git"
+    "url": "https://github.com/danhoss/yadcf.git"
   },
   "homepage": "http://yadcf-showcase.appspot.com/",
   "bugs": {
