@@ -1,88 +1,120 @@
 .hide {
-	display: none;
-}
-
-.inuse, .ui-slider-range .inuse, .yadcf-filter-range-number-slider .inuse {
-	background: #8BBEF0;
+    display: none;
 }
 
 .yadcf-filter-reset-button {
-	display: inline-block;
+    height: 30px;
+    border: 0;
+    background-color: #BBB;
+    color: #FFF;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.yadcf-filter-reset-button.range-number-slider-reset-button{
-	position: relative;
-	top: -6px;	
+.yadcf-filter-reset-button.range-number-slider-reset-button {
+    position: relative;
+    top: -6px;
 }
 
+.yadcf-filter-date,
 .yadcf-filter {
-	padding-right: 4px;
-	padding-left: 4px;
-	padding-bottom: 3px;
-	padding-top: 3px;
+    padding: 3px 4px;
+    min-width: 60px;
+    width: calc(100% - 20px);
+    vertical-align: middle;
+    outline: none;
+    text-align: left !important;
 }
 
-.yadcf-filter > option{
+.yadcf-filter-date {
+    min-width: 90px;
+}
+
+.yadcf-filter > option {
     background: white;
 }
 
-.ui-autocomplete .ui-menu-item { 
-	font-size:13px;
+.ui-autocomplete .ui-menu-item {
+    font-size: 13px;
 }
 
-#ui-datepicker-div { 
-	font-size:13px;
+#ui-datepicker-div {
+    font-size: 13px;
 }
+
 .yadcf-filter-wrapper {
-	display: inline-block;
-	white-space: nowrap;
-	margin-left: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 2px;
+}
+
+.yadcf-filter-wrapper input {
+    border: 1px solid #BBB;
+    box-sizing: border-box;
+    height: 30px;
+}
+
+.yadcf-filter-wrapper input::placeholder {
+    color: #BBB;
+}
+
+.yadcf-filter-wrapper .inuse,
+.yadcf-filter-wrapper .ui-slider-range .inuse,
+.yadcf-filter-wrapper .yadcf-filter-range-number-slider .inuse {
+    border-color: #367fa9;
+}
+
+.yadcf-filter-wrapper .inuse + .yadcf-filter-reset-button,
+.yadcf-filter-wrapper .ui-slider-range .inuse + .yadcf-filter-reset-button,
+.yadcf-filter-wrapper .yadcf-filter-range-number-slider .inuse + .yadcf-filter-reset-button {
+    background-color: #367fa9;
 }
 
 .yadcf-filter-range-number {
-	width: 40px;
+    width: 40px;
 }
 
 .yadcf-filter-range-number-seperator {
-	margin-left: 10px;
-	margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .yadcf-filter-range-date {
-	width: 80px;
+    width: 80px;
 }
 
 .yadcf-filter-range-date-seperator {
-	margin-left: 10px;
-	margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .yadcf-filter-wrapper-inner {
-	display: inline-block;
-	border: 1px solid #ABADB3;
+    display: inline-block;
+    border: 1px solid #ABADB3;
 }
 
 .yadcf-number-slider-filter-wrapper-inner {
-	display: inline-block;
-	width: 200px;
-	margin-bottom: 7px;
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 7px;
 }
 
 .yadcf-filter-range-number-slider .ui-slider-handle {
-	width: 10px;
-	height: 10px;
-	margin-top: 1px;
+    width: 10px;
+    height: 10px;
+    margin-top: 1px;
 }
 
 .yadcf-filter-range-number-slider .ui-slider-range {
-	position: relative;
-	height: 5px;
+    position: relative;
+    height: 5px;
 }
 
 .yadcf-filter-range-number-slider {
-	height: 5px;
-	margin-left: 6px;
-	margin-right: 6px;
+    height: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 .yadcf-filter-range-number-slider {
@@ -90,34 +122,35 @@
 }
 
 .yadcf-number-slider-filter-wrapper-inner .yadcf-filter-range-number-slider-min-tip {
-	font-size: 13px;
-	font-weight: normal;
-	position: absolute;
-	outline-style: none;
+    font-size: 13px;
+    font-weight: normal;
+    position: absolute;
+    outline-style: none;
 }
 
 .yadcf-number-slider-filter-wrapper-inner .yadcf-filter-range-number-slider-max-tip {
-	font-size: 13px;
-	font-weight: normal;
-	position:absolute;
-	outline-style: none;
+    font-size: 13px;
+    font-weight: normal;
+    position: absolute;
+    outline-style: none;
 }
 
 .yadcf-number-slider-filter-wrapper-inner .yadcf-filter-range-number-slider-min-tip-inner {
-	position:absolute;
-	top: 11px;
+    position: absolute;
+    top: 11px;
 }
 
 .yadcf-number-slider-filter-wrapper-inner .yadcf-filter-range-number-slider-max-tip-inner {
-	position:absolute;
-	top: 11px;
+    position: absolute;
+    top: 11px;
 }
 
 .yadcf-exclude-wrapper {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
 }
+
 .yadcf-label.small {
-	font-size: 10px;
+    font-size: 10px;
 }
