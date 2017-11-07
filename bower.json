@@ -6,7 +6,7 @@
 	"homepage": "http://yadcf-showcase.appspot.com/",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/vedmack/yadcf"
+		"url": "https://github.com/danhoss/yadcf"
 	},
 	"main": [
 		"jquery.dataTables.yadcf.js",

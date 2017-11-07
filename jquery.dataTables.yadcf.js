@@ -35,6 +35,12 @@
                 Possible values:    select / multi_select / auto_complete / text / date / range_number / range_number_slider / range_date / custom_func / multi_select_custom_func / tri_state
                 Description:        The type of the filter to be used in the column
 
+* filter_settings
+                Required:           Only when filter_type is set to tri_state
+                Type:               Object
+                Default value:      none
+                Description:        Object  { "false": { title: string, value: mixed }, "true": { title: string, value: mixed }, "indeterminate": { title: string } } 
+
 * custom_func
                 Required:           true (when filter_type is custom_func / multi_select_custom_func / tri_state)
                 Type:               function

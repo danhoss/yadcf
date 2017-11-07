@@ -1,0 +1,76 @@
+.tri-state-box {
+    display: block;
+    box-sizing: border-box;
+    width: 81px;
+    height: 26px;
+    background-color: #EEE;
+    border: 1px solid #BBB;
+    border-radius: 12px;
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.tri-state-box .state-false,
+.tri-state-box .state-indeterminate,
+.tri-state-box .state-true {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    padding: ~"calc(13% - 2px)";
+    margin: ~"calc(2px - 13%)";
+    top: ~"calc(50% - 1px)";
+    border-radius: 50%;
+    border: 1px solid #BBB;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+
+.tri-state-box .state-false {
+    left: 13%;
+}
+
+.tri-state-box .state-indeterminate {
+    left: 50%;
+}
+
+.tri-state-box .state-true {
+    left: ~"calc(87% - 1px)";
+}
+
+.tri-state-box input {
+    display: none;
+}
+
+.tri-state-box .pointer {
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: ~"calc(13% - 1px)";
+    margin: ~"calc(1px - 13%)";
+    top: 50%;
+    border-radius: 50%;
+    background-color: #FFF;
+    box-sizing: border-box;
+    transition: all 150ms linear;
+}
+
+.tri-state-box input:checked + .state-false ~ .pointer {
+    left: 13%;
+    background-color: #367fa9;
+}
+
+.tri-state-box input:checked + .state-indeterminate ~ .pointer {
+    left: 50%;
+    background-color: #BBB;
+}
+
+.tri-state-box input:checked + .state-true ~ .pointer {
+    left: ~"calc(87% - 1px)";
+    background-color: #367fa9;
+}
